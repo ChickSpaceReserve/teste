@@ -1,0 +1,58 @@
+body{
+    background-image: url("../IMAGENS/chickspace.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 180px;
+}
+.containe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 0 auto;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid #000000;
+    box-shadow: 0 0 20px 0 #000000;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.tamanho{
+    margin-top: 2rem;
+    width: 25%;
+    height: 25%;
+    margin-bottom: 2rem;
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.decoracao{
+    cursor: pointer;
+    border: none;
+    border-radius: 32px;
+    border: 1px solid #000000;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    transition: all .3s ease-in-out;
+}
+.decoracao:hover{
+    color: #000000;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .tamanho{
+        width: 50%;
+        height: 50%;
+    }
+    .containe {
+        width: 90%;
+    }
+}

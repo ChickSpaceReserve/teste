@@ -1,0 +1,143 @@
+body{
+    background-image: url("../IMAGENS/chickspace.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+  
+.wrapper {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+  
+.slide-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+  
+.slide-list {
+    display: flex;
+}
+  
+.slide-item {
+    cursor: grab;
+    flex-shrink: 0;
+    padding: 0 10px;
+    width: 80vw;
+}
+  
+.slide-image {
+    border-radius: 10px;
+    width: 100%;
+}
+  
+.slide-nav-button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 36px;
+    position: absolute;
+    z-index: 1;
+}
+  
+.slide-nav-previous {
+    left: 20px;
+}
+  
+.slide-nav-next {
+    right: 20px;
+}
+  
+.slide-controls {
+    margin: 30px auto 0;
+}
+  
+.slide-control-button {
+    color: transparent;
+    border: 1px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+    background: transparent;
+    font-size: 18px;
+    margin: 0 5px;
+}
+  
+.slide-control-button.active {
+    background-color: rgb(207, 207, 207);
+}
+  
+@media screen and (max-width: 768px) {
+  
+    .slide-nav-button {
+      margin-top: -20px;
+      font-size: 28px;
+    }
+    
+    .slide-nav-previous {
+      left: 10px;
+    }
+    
+    .slide-nav-next {
+      right: 10px;
+    }
+  
+    .slide-controls {
+      margin: 15px auto 0;
+    }
+  
+    .slide-control-button {
+      font-size: 14px;
+    }
+}
+
+.caixa{
+    width: 95%;
+    margin: 20px auto;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px 0 #000000;
+    border-radius: 10px;
+}
+.caixa h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 36px;
+}
+.caixa p{
+    margin: 20px;
+    font-size: 18px;
+    text-indent: 5ch;
+}
+.caixa h2{
+    margin: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .add{
+        width: 15%;
+        height: 15%;
+    }
+
+    .buttons-editar{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+    }
+}
